@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+/* @import url("https://fonts.googleapis.com/css?family=Lato|Poppins"); */
 
 :root {
   --primaryColor: #3fd0d4;
@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
