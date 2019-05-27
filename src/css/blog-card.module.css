@@ -1,8 +1,8 @@
-.tour {
+.blog {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
-.tour:hover {
+.blog:hover {
   box-shadow: var(--darkShadow);
 }
 
@@ -45,33 +45,16 @@
   padding: 1rem;
   text-align: left;
 }
-.footer h3 {
+.footer h4 {
   text-transform: capitalize;
   margin-bottom: 0;
 }
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-transform: uppercase;
-  align-items: center;
-  margin-top: 0.5rem;
-}
-.info h6,
-.info h4 {
-  margin-bottom: 0;
-}
-.country {
-  text-transform: capitalize;
-  color: var(--primaryColor);
-  display: flex;
-  align-items: center;
-}
-.icon {
-  margin-right: 0.4rem;
-}
-.details {
-  color: var(--darkGrey);
-  text-transform: uppercase;
-  text-align: right;
+.date {
+  position: absolute;
+  left: 0;
+  top: 75%;
+  background: var(--primaryColor);
+  padding: 0.3rem 0.5rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }

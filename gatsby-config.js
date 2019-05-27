@@ -24,8 +24,6 @@ module.exports = {
     `gatsby-plugin-playground`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -34,6 +32,8 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
