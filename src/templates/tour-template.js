@@ -6,6 +6,8 @@ import styles from "../css/template.module.css"
 import Img from "gatsby-image"
 import { FaMoneyBillWave, FaMap } from "react-icons/fa"
 import Day from "../components/SingeTour/Day"
+import SEO from "../components/SEO"
+
 const Template = ({ data }) => {
   const {
     name,
@@ -21,6 +23,7 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={name} />
       <StyledHero img={mainImage.fluid} />
       <section className={styles.template}>
         <div className={styles.center}>
