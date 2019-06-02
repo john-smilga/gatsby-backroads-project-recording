@@ -1,11 +1,11 @@
-import React from "react"
+import React, { memo } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/blog.module.css"
 import BlogCard from "../components/Blog/BlogCard"
 import Title from "../components/Title"
-import SEO from "../components/SEO"
+// import SEO from "../components/SEO"
 
 const BlogList = props => {
   const { currentPage, numPages } = props.pageContext
@@ -18,7 +18,7 @@ const BlogList = props => {
   const { data } = props
   return (
     <Layout>
-      <SEO title="Blogs" />
+      {/* <SEO title="Blogs" /> */}
       <section className={styles.blog}>
         <Title title="latest" subtitle="posts" />
         <div className={styles.center}>
@@ -81,4 +81,4 @@ export const query = graphql`
   }
 `
 
-export default BlogList
+export default memo(BlogList)

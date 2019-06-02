@@ -6,7 +6,7 @@ const getData = graphql`
     site {
       siteMetadata {
         siteTitle: title
-        description
+        siteDesc: description
         author
         siteUrl
         image
@@ -15,10 +15,10 @@ const getData = graphql`
     }
   }
 `
-const SEO = ({ title }) => {
+const SEO = ({ title, description }) => {
   const { site } = useStaticQuery(getData)
   const {
-    description,
+    siteDesc,
     siteTitle,
     siteUrl,
     image,
@@ -27,13 +27,14 @@ const SEO = ({ title }) => {
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
-      <meta name="description" content={description} />
+      <meta name="description" content={description || siteDesc} />
       <meta name="image" content={image} />
       {/* open graph  */}
+      {/* “Open Graph” meta tags */}
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={siteTitle} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={siteDesc} />
       <meta property="og:image" content={`${siteUrl}${image}`} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />

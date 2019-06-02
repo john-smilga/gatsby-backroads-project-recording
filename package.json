@@ -33,6 +33,7 @@
     "gatsby-plugin-transition-link": "^1.12.3",
     "gatsby-source-contentful": "^2.0.55",
     "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-source-strapi": "0.0.8",
     "gatsby-transformer-sharp": "^2.1.19",
     "gsap": "^2.1.2",
     "react": "^16.8.6",

@@ -1,9 +1,10 @@
-import React from "react"
+import React, { memo } from "react"
 import styles from "../../css/blog-card.module.css"
 import Image from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 const BlogCard = ({ blog }) => {
   const { slug, title, image, published } = blog
+  console.log(`Title : ${title}`)
 
   return (
     <article className={styles.blog}>
@@ -21,4 +22,4 @@ const BlogCard = ({ blog }) => {
   )
 }
 
-export default BlogCard
+export default memo(BlogCard)

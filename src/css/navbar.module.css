@@ -1,4 +1,3 @@
-
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -25,7 +24,7 @@
   overflow: hidden;
 }
 .show-nav {
-  height: 216px;
+  height: 324px;
 }
 .nav-links a {
   display: block;
@@ -49,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1030px) {
   .logo-btn {
     display: none;
   }

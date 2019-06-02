@@ -33,7 +33,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
@@ -43,6 +42,7 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -53,6 +53,15 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: "src/images/icon.jpg",
+      },
+    },
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `https://shrouded-brook-68415.herokuapp.com`,
+        queryLimit: 1000, // Default to 100
+        contentTypes: ["restaurant"],
+        // Possibility to login with a strapi user, when content types are not publically available (optional).
       },
     },
   ],

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import Layout from "../components/Layout"
 import SimpleHero from "../components/SimpleHero"
 import Banner from "../components/Banner"
@@ -10,7 +10,7 @@ import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import Featured from "../components/Home/Featured"
 import SEO from "../components/SEO"
-export default ({ data }) => {
+export default memo(({ data }) => {
   const tours = data.tours.edges
   return (
     <Layout>
@@ -30,7 +30,7 @@ export default ({ data }) => {
       <Featured tours={tours} />
     </Layout>
   )
-}
+})
 
 export const query = graphql`
   {
