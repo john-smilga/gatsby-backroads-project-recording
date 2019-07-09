@@ -44,6 +44,7 @@
 .footer {
   padding: 1rem;
   text-align: left;
+  background: var(--mainWhite);
 }
 .footer h3 {
   text-transform: capitalize;

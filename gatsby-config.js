@@ -55,14 +55,5 @@ module.exports = {
         icon: "src/images/icon.jpg",
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `https://shrouded-brook-68415.herokuapp.com`,
-        queryLimit: 1000, // Default to 100
-        contentTypes: ["restaurant"],
-        // Possibility to login with a strapi user, when content types are not publically available (optional).
-      },
-    },
   ],
 }
