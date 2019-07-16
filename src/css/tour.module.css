@@ -5,6 +5,9 @@
 .tour:hover {
   box-shadow: var(--darkShadow);
 }
+.tour h3 {
+  font-size: 16px;
+}
 
 .img-container {
   position: relative;

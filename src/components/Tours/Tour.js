@@ -19,7 +19,7 @@ const Tour = ({ tour }) => {
       </div>
       <div className={styles.footer}>
         <h3>{name}</h3>
-        {/* <div className={styles.info}>
+        <div className={styles.info}>
           <h4 className={styles.country}>
             <FaMap className={styles.icon} />
             {country}
@@ -28,7 +28,7 @@ const Tour = ({ tour }) => {
             <h6>{days} days</h6>
             <h6>from ${price}</h6>
           </div>
-        </div> */}
+        </div>
       </div>
     </article>
   )
