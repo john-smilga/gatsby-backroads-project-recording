@@ -35,7 +35,7 @@
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-source-strapi": "0.0.8",
     "gatsby-transformer-sharp": "^2.1.19",
-    "gsap": "^2.1.2",
+    "gsap": "^3.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
